@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./icons.svg" />
-    <title>Image search</title>
+    <title>Page title</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
-    <header class="header">
+    <div class="search-form_block">
       <form class="search-form" id="search-form">
         <input
+          class="search-form-txt"
           type="text"
           name="searchQuery"
           autocomplete="off"
           placeholder="Search images..."
         />
-        <button type="submit" class="header_button">
-          <svg>
-            <use href="./icons.svg#icon_search"></use>
-          </svg>
+        <button class="btn" type="submit">
+          <img
+            class="search-img"
+            src="./images/search.svg"
+            width="16"
+            height="16"
+          />
         </button>
       </form>
-    </header>
+    </div>
     <div class="gallery">
       <!-- Картки зображень -->
     </div>
-    <button type="button" class="load-more">Load more</button>
-    <script type="module" href="./index.js"></script>
+    <div class="loadBtn">
+      <button type="button" class="load-more hidden">Load more</button>
+    </div>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
