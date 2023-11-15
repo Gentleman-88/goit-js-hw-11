@@ -1,2 +1,20 @@
 @import './common';
 @import './example';
+
+
+.photo-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.photo {
+    width: 650px;
+    height: 524px;
+}
+
+.info {
+    display: flex;
+    gap: 24px;
+}
