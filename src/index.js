@@ -34,6 +34,7 @@ async function onFormSubmit(event) {
             Notiflix.Notify.warning(
                 'Sorry, there are no images matching your search query. Please try again.'
             );
+            clearGerelly();
             hideLoadMoreButton();
             return;
         }
@@ -98,4 +99,4 @@ function renderImages(array) {
 
 function clearGerelly() {
     refs.gallery.innerHTML = '';
-}
+};
